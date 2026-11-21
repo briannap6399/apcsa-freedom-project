@@ -64,3 +64,29 @@ print(message)
 ```
 
 This is definitely a lot easier for me to understand now that I've connected it back to Java, but in this case, the value of `anotherCharacter` is being checked by the different cases, and since its value is 'a', the code prints out "The first letter of the Latin alphabet". This is honestly pretty interesting to me, and I hope the Playground does cover this section! I doubt it however, because I never saw `repeat-while` or `while` get covered as I was completing the loops section of the code. Maybe they're saving it for the 2nd learning section? Either way, I plan to create my own reference sheet in the coming weeks so this becomes easier for me to digest. Still deciding if I'll write in a notebook or on Google Docs though. 
+
+### 11/28/26:
+* So, some good news! I managed to create my own swift file, [sandbox!](sandbox.swift). This definitely does help me out a whole lot since this confirms one of the original thoughts I had prior about setting up Github and XCode together, but what surprises me is what happens when I run the file using ***http-server***. Upon me using the command and clicking the file, I was originally prompted into an XCode file that acted like it's own IDE! I wish I took pictures of it because when I run the same trick now, I'm supposedly supposed to download XCode even though it's already downloaded on my laptop since the day I first took claim of this apple laptop. Unfortunately, this means I'm set back a bit with what I want to do as now I'll need to consult my school's tech staff again, but in the meantime, I've been continuing with Swift Playground and I've found a collection of videos that have been providing me with additional knowledge about Swift such as [Sam Meech-Ward's 'Learn Swift Programming in 8 Minutes](https://youtu.be/M2Ro5wEuY2o?si=MC0xEiNJyDKaKAm4) & [Swiftul Thinking's Swift Basics Playlist](https://youtube.com/playlist?list=PLwvDm4VfkdpiLvzZFJI6rVIBtdolrJBVB&si=rcWnED6EZ87X7Pbx). What especially interests me from Sam's video is the content he shows, such as using classes in Swift:
+
+```swift
+class Person{
+    var name: String
+
+    init(name: String){
+    self.name = name
+    }
+
+    func sayHello(){
+        print("Hello \(self.name)")
+    }
+}
+```
+
+Which is pretty similar to how classes run in Java (again, going off of my own experience with coding languages), and using `.forEach` which reminds me of when I got to see that in JavaScript (specifically under the DOM section of the course). Moving past the familiarities, Sam also showed something called a dictionary and a set which does look a lot like a titular array, and it looked like this:
+
+```swift
+  var namesDictionary = ["Sam": "Sam"]
+  var namesSet = set(["Sam", "Sam"])
+```
+
+I do wonder what's the difference between Set, Dictionary, and Array, and by consulting the [Collection Types Documentation](https://docs.swift.org/latest/documentation/the-swift-programming-language/collectiontypes), it seems that, at least compared to arrays, sets aren't as organized with the indexes and they usually tend to be more unique and with dictionaries, they're also unorgaized like sets but they possess custom keys that could be used for easier identification. Focusing more on arrays for a moment as they do seem pretty similar to what I know about them now, they actually have a few add-ons, such as `.insert()` which takes what you want to add and uses `at: _` to set it in a certain index, `.remove()` which uses the `at: _` attachment as `.insert()` but obviously removes an index, and a few others such as `.removeLast()`, `.append()` (which adds a new index to the end of the array), and `.isEmpty()` which checks if there are any indexes on an array! I'm genuinely glad that there's more commands for insertions and removals than just `.splice` from JavaScript as that always confused me. Either way though, for next week, I plan to start on a chart using the [APCSA Google Doc](https://docs.google.com/document/d/1lErmB6TK7lcmL1tcC05RIPc3fBbeWjWUhe9zP_tuQCI/edit?tab=t.0), specifically the Freedom Project section to keep track of how swift runs. 
